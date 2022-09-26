@@ -4,22 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style-home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <title>Home</title>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <div>
-            <li>All Categories</li>
-            <li>All time</li>
-            <li>bars</li>
-          </div>
-          <div class="search"></div>
-          <div class="logo"></div>
-        </ul>
+
+        <div class="select">
+          <p>All Categories</p>
+          <p>All Time</p>
+        </div>
+
+        <div class="search">
+          <label for="search">
+            <a href="#"><img src="assets/magnifying-glass.svg" width="15px" alt="" /></a>
+            <input type="type" id="search" name="search" placeholder="Search book"/>
+          </label>
+        </div>
+
+        <div class="logo">
+          <img src="assets/bookshelf.png " width="50px" alt="" />
+          <p>Library</p>
+        </div>
+
       </nav>
     </header>
-    <main></main>
+
+    <section class="slides">
+      <div class="slides-container">
+
+        <div class="image-slider">
+          <div class="slides-div">
+            <img src="assets/img.jpg" alt="">
+          </div>
+          <div class="slides-div">
+            <img src="assets/img.jpg" alt="">
+          </div>
+          <div class="slides-div">
+            <img src="assets/img.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="list">
+      <h3>List Book</h3>
+
+      <div class="container">
+        <div class="card">
+          <img src="assets/1.png" alt="">
+          <h5>Dillan 1990</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id.</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/2.png" alt="">
+          <h5>Sebuah Seni Untuk..</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id.</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/3.png" alt="">
+          <h5>React Native</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id.</p>
+        </div>
+
+      </div>
+    </section>
+    <section class="sidebar">
+      <div class="bar"><img src="assets/menu.svg" width="25px" alt=""></div>
+      <div class="profile">
+        <img src="assets/profile.png" alt="img-profile">
+        <h3>Niki Zefanya</h3>
+      </div>
+      <div class="menu">
+        <a href="#">Explore</a>
+        <a href="#">History</a>
+        <a href="#">Add Book</a>
+      </div>
+    </section>
   </body>
 </html>

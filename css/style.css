@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    display: grid;
+    grid-template: 1fr / 1.5fr 1fr;
+}
+
+a {
+    text-decoration: none;
+}
+.container1, .container2{
+    height: 100vh;
+}
+
+.container1 {
+    display: flex;
+    color: #fff;
+    background: url(/assets/mollie-sivaram-_1gBVgy8gIU-unsplash.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.overlay h2 {
+    font-size: 3rem;
+    font-weight: medium;
+    margin: 1.5rem 0 0 3rem;
+    line-height: 4rem;
+}
+
+.overlay p{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container2 .logo {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em 1em 0 0;
+}
+
+.container2 .login{
+    margin: 2rem 3rem; 
+    text-align: left;
+}
+
+.login h2 {
+    color: #424242;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.login p {
+    font-size: 1rem;
+}
+
+.form-box {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr ;
+    place-items: center;
+    margin: 0 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.form-group {
+    background-color: #fff;
+    padding: 0.4em 1rem;
+    font-size: 1rem;
+    display: grid;
+    place-items: center start;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+}
+
+.form-group label {
+    color: #000;
+}
+
+.form-group input {
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+
+.check {
+    margin: 0.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.check label {
+    color: #D0CCCC;
+}
+
+.check a{
+    color: #000;
+}
+
+.btn {
+    margin: 2rem 3rem;
+}
+
+.btn .btn-login a {
+    color: #fff;
+}
+
+.btn .btn-sign a {
+    color: #D0CCCC;
+}
+
+.btn-login {
+    color: white;
+    margin-right: 1.25rem;
+    padding: 0.5rem 1.25rem;
+    background-color: #000;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn-sign {
+    padding: 0.5rem 1.25rem;
+    color: #D0CCCC;
+    background-color: #fff;
+    border: 1px solid #D0CCCC;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.btn-sign:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid black;
+}
+
+.terms {
+    font-size: 1rem;
+    margin: 0 3rem;
+}
+.terms span {
+    color: #D0CCCC;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+    body {
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .overlay h2 {
+        margin: 1rem;
+    }
+}
+
+@media screen  and (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+    .container1 {
+        display: none;
+    }
+    .check {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .container2 {
+        background: url(/assets/mollie-sivaram-_1gBVgy8gIU-unsplash.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .overlay2 {
+        background: rgba(0, 0, 0, 0.3);
+        width: 100%; height: 100%;
+    }
+    .login h2, .login p {
+        color: #fff;
+    }
+    .logo img{
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+    }
+    .terms {
+        color: white;
+    }
+}

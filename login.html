@@ -5,47 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <article class="container1">
-      <h2>Book is a window <br/>to the world</h2>
-      <p>Photo by Mark Pan4ratte on Unsplash</p>
-    </article>
-
-    <article class="container2">
-      <figure><img src="assets/bookshelf.png" alt="logo" width="70px" /></figure>
-
-      <div class="login">
-        <h2>Login</h2>
-        <p>Welcome Back, Please Login <br />to your account</p>
+    <section class="container1">
+      <div class="overlay">
+        <h2>Book is a window <br />to the world</h2>
+        <p>Photo by Mark Pan4ratte on Unsplash</p>
       </div>
+    </section>
 
-      <div class="form" id="form">
-        <div class="form-group form-email">
-          <label for="email">Email Address</label><br />
-          <input type="text" id="email" name="email" />
+    <section class="container2">
+      <div class="overlay2">
+        <div class="logo"><img src="assets/bookshelf.png" alt="logo" width="70px" /></div>
+
+        <div class="login">
+          <h2>Login</h2>
+          <p>Welcome Back, Please Login <br />to your account</p>
         </div>
-        <div class="form-group form-password">
-          <label for="password">Password</label><br />
-          <input type="password" id="password" name="password" minlength="8" maxlength="20" />
+
+        <form action="" class="form">
+          <div class="form-box">
+            <div class="form-group form-email">
+              <label for="email">Email Address</label><br />
+              <input type="text" id="email" name="email" />
+            </div>
+
+            <div class="form-group form-password">
+              <label for="password">Password</label><br />
+              <input type="password" id="password" name="password" />
+            </div>
+          </div>
+
+          <div class="check">
+            <label><input type="checkbox" id="check" name="check" /> Remember me</label>
+            <a href="#">Forgot Password</a>
+          </div>
+
+          <div class="btn">
+            <button type="submit" class="btn-login"><a href="#">Login</a></button>
+            <button type="submit" class="btn-sign"><a href="register.html">Sign Up</a></button>
+          </div>
+        </form>
+
+        <div class="terms">
+          <p><span>By signing up, you agree to Book's</span><br />Terms and Conditions <span>&</span> Privacy Policy</p>
         </div>
       </div>
-
-      <div class="check">
-        <label><input type="checkbox" id="check" name="check" /> Remember me</label>
-        <p>Forgot Password</p>
-      </div>
-
-      <div class="btn">
-        <button class="btn-login">Login</button>
-        <button class="btn-sign">Sign up</button>
-      </div>
-
-      <div class="terms">
-        <p><span>By signing up, you agree to Book's</span><br />Terms and Conditions <span>&</span> Privacy Policy</p>
-      </div>
-    </article>
+    </section>
   </body>
 </html>
